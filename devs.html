@@ -9,7 +9,7 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -17,13 +17,43 @@
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
+<!-- Preloader -->
 <div id="preloader">
-  <div class="preloader-balloons">
-    <div class="preloader-balloon"></div>
-    <div class="preloader-balloon"></div>
-    <div class="preloader-balloon"></div>
+  <div class="preloader-svg-wrap">
+    <svg viewBox="0 0 64 80">
+      <defs>
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#FFD700"/>
+          <stop offset="100%" stop-color="#c8a820"/>
+        </linearGradient>
+        <linearGradient id="goldPurpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#7b2fff"/>
+          <stop offset="100%" stop-color="#e8c84a"/>
+        </linearGradient>
+      </defs>
+      <path class="balloon-path" d="M32,10 C18,10 18,34 32,46 C46,34 46,10 32,10 Z" />
+      <path class="balloon-fill" d="M32,10 C18,10 18,34 32,46 C46,34 46,10 32,10 Z" />
+      <polygon points="32,46 30,50 34,50" fill="#e8c84a" />
+      <line x1="32" y1="50" x2="32" y2="60" stroke="#e8c84a" stroke-width="1.5" />
+    </svg>
   </div>
-  <div class="preloader-text">Loading</div>
+  <div class="preloader-text-stagger">
+    <span class="preloader-char">F</span>
+    <span class="preloader-char">r</span>
+    <span class="preloader-char">e</span>
+    <span class="preloader-char">e</span>
+    <span class="preloader-char">S</span>
+    <span class="preloader-char">t</span>
+    <span class="preloader-char">y</span>
+    <span class="preloader-char">l</span>
+    <span class="preloader-char">e</span>
+    <span class="preloader-char">&nbsp;</span>
+    <span class="preloader-char">D</span>
+    <span class="preloader-char">e</span>
+    <span class="preloader-char">c</span>
+    <span class="preloader-char">o</span>
+    <span class="preloader-char">r</span>
+  </div>
 </div>
 
 <div class="ambient" aria-hidden="true">
@@ -214,5 +244,6 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/ai-widget.js"></script>
 </body>
 </html>
