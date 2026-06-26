@@ -182,28 +182,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── 13. CONTACT FORM ─────────────────────────────
   const form = document.getElementById('contactForm');
   form?.addEventListener('submit', e => {
-  e.preventDefault();
-  const name = encodeURIComponent(document.getElementById('contactName').value);
-  const phone = encodeURIComponent(document.getElementById('contactPhone').value);
-  const email = encodeURIComponent(document.getElementById('contactEmail').value);
-  const event = encodeURIComponent(document.getElementById('contactEvent').value);
-  const date = encodeURIComponent(document.getElementById('contactDate').value);
-  const message = encodeURIComponent(document.getElementById('contactMessage').value);
-  let text = `Hello FreeStyle Balloon Decoration,%0A%0A`;
-  text += `Name: ${name}%0A`;
-  text += `Phone: ${phone}%0A`;
-  if (email) text += `Email: ${email}%0A`;
-  if (event) text += `Event: ${event}%0A`;
-  if (date) text += `Date: ${date}%0A`;
-  if (message) text += `Message: ${message}%0A`;
-  const waUrl = `https://wa.me/919471679158?text=${text}`;
-  const btn = form.querySelector('[type="submit"]');
-  const orig = btn.innerHTML;
-  btn.innerHTML = '✅ Opening WhatsApp…';
-  btn.disabled = true;
-  window.open(waUrl, '_blank');
-  setTimeout(() => { btn.innerHTML = orig; btn.disabled = false; form.reset(); }, 3000);
-});
+    e.preventDefault();
+    const btn = form.querySelector('[type="submit"]');
+    const orig = btn.innerHTML;
+    btn.innerHTML = '✅ Message Sent — We\'ll be in touch!';
+    btn.disabled = true;
+    setTimeout(() => { btn.innerHTML = orig; btn.disabled = false; form.reset(); }, 4500);
+  });
 
   // ── 14. STAGGER CHILDREN ─────────────────────────
   // Stagger grid children for cinematic reveal
@@ -267,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
         this.vy = -(Math.random() * 0.5 + 0.2); // floating up
         this.baseAlpha = Math.random() * 0.25 + 0.1;
         this.alpha = this.baseAlpha;
-        const colorTypes = ['purple', 'gold', 'pink'];
+        const colorTypes = ['gold', 'gold-2'];
         this.colorType = colorTypes[Math.floor(Math.random() * colorTypes.length)];
       }
 
@@ -299,10 +284,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       draw() {
-        let hex = '#c492ff';
-        if (this.colorType === 'gold') hex = getThemeColor('--gold', '#ecc055');
-        else if (this.colorType === 'pink') hex = getThemeColor('--pink', '#f472b6');
-        else hex = getThemeColor('--purple-light', '#c492ff');
+        let hex = '#d8b788';
+        if (this.colorType === 'gold') hex = getThemeColor('--gold', '#d8b788');
+        else hex = getThemeColor('--gold-2', '#b8986c');
 
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
@@ -356,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.beginPath();
             ctx.moveTo(p1.x, p1.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = getThemeColor('--purple-light', '#c492ff');
+            ctx.strokeStyle = getThemeColor('--gold-2', '#b8986c');
             ctx.globalAlpha = alpha;
             ctx.lineWidth = 0.45;
             ctx.stroke();

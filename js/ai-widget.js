@@ -1,6 +1,6 @@
 /* ====================================================
    ai-widget.js — Premium Floating AI Decor Assistant
-   Designed by ZephyrDevs for FreeStyle Balloon Decoration
+   Designed by ZephyrDevs for FreeStyle Decorators
    ==================================================== */
 'use strict';
 
@@ -15,7 +15,7 @@
       width: 56px;
       height: 56px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #7b2fff, #e8c84a);
+      background: linear-gradient(135deg, #b8986c, #e8c84a);
       border: 1px solid rgba(255, 255, 255, 0.2);
       display: flex;
       align-items: center;
@@ -24,12 +24,12 @@
       color: #fff;
       cursor: pointer;
       z-index: 9999;
-      box-shadow: 0 4px 24px rgba(123, 47, 255, 0.45);
+      box-shadow: 0 4px 24px rgba(184, 152, 108, 0.3);
       transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
     .ai-widget-fab:hover {
       transform: scale(1.1) translateY(-3px) rotate(15deg);
-      box-shadow: 0 8px 36px rgba(123, 47, 255, 0.65);
+      box-shadow: 0 8px 36px rgba(184, 152, 108, 0.45);
     }
     .ai-widget-fab .fab-pulse {
       position: absolute;
@@ -49,7 +49,7 @@
       position: absolute;
       left: 70px;
       bottom: 15px;
-      background: rgba(14, 0, 32, 0.9);
+      background: rgba(11, 10, 9, 0.95);
       border: 1px solid rgba(255,255,255,0.08);
       padding: 0.45rem 0.95rem;
       border-radius: 8px;
@@ -76,12 +76,12 @@
       left: 2rem;
       width: 380px;
       height: 540px;
-      background: rgba(10, 2, 22, 0.82);
+      background: rgba(11, 10, 9, 0.9);
       border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 20px;
       backdrop-filter: blur(30px) saturate(180%);
       -webkit-backdrop-filter: blur(30px) saturate(180%);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 40px rgba(123,47,255,0.15);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 40px rgba(184,152,108,0.1);
       z-index: 9998;
       display: flex;
       flex-direction: column;
@@ -116,19 +116,19 @@
       width: 36px;
       height: 36px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #7b2fff, #e86fa3);
+      background: linear-gradient(135deg, #b8986c, #d8b788);
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1.1rem;
-      box-shadow: 0 0 12px rgba(123, 47, 255, 0.4);
+      box-shadow: 0 0 12px rgba(184, 152, 108, 0.3);
       position: relative;
     }
     .ai-header-status {
       width: 9px;
       height: 9px;
       background: #2ecc71;
-      border: 2px solid #060010;
+      border: 2px solid #0b0a09;
       border-radius: 50%;
       position: absolute;
       bottom: 0;
@@ -250,11 +250,11 @@
       align-self: flex-start;
     }
     .ai-msg.ai-msg-user {
-      background: linear-gradient(135deg, #7b2fff, #5a00d4);
+      background: linear-gradient(135deg, #b8986c, #8f734f);
       border-top-right-radius: 3px;
       color: #fff;
       align-self: flex-end;
-      box-shadow: 0 4px 15px rgba(123, 47, 255, 0.2);
+      box-shadow: 0 4px 15px rgba(184, 152, 108, 0.15);
     }
     .ai-msg-meta {
       font-size: 0.65rem;
@@ -285,7 +285,7 @@
     }
     .ai-chip:hover {
       background: rgba(255, 255, 255, 0.08);
-      border-color: #b980f8;
+      border-color: #d8b788;
       color: #fff;
       transform: translateY(-1px);
     }
@@ -310,7 +310,7 @@
       transition: all 0.25s;
     }
     .ai-chat-input:focus {
-      border-color: #b980f8;
+      border-color: #d8b788;
       background: rgba(255, 255, 255, 0.05);
     }
     .ai-chat-send {
@@ -319,7 +319,7 @@
       border-radius: 10px;
       background: linear-gradient(135deg, #e8c84a, #c8a820);
       border: none;
-      color: #1a0030;
+      color: #2f2010;
       font-size: 0.9rem;
       display: flex;
       align-items: center;
@@ -359,7 +359,7 @@
     /* Design Details Card */
     .ai-design-card {
       background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(139, 79, 216, 0.35);
+      border: 1px solid rgba(184, 152, 108, 0.25);
       border-radius: 12px;
       padding: 1rem;
       margin-top: 0.5rem;
@@ -411,7 +411,7 @@
       transition: border-color 0.2s;
     }
     .ai-select:focus, .ai-number:focus {
-      border-color: #b980f8;
+      border-color: #d8b788;
     }
     .ai-calc-box {
       background: rgba(255,255,255,0.02);
@@ -430,7 +430,7 @@
       font-family: 'Playfair Display', serif;
       font-size: 1.55rem;
       font-weight: 700;
-      color: #b980f8;
+      color: #d8b788;
       margin-top: 0.15rem;
     }
 
@@ -481,7 +481,7 @@
   // Color Presets Data
   const colorPresets = {
     luxury: {
-      colors: ['#e8c84a', '#060010', '#c0c0c0'],
+      colors: ['#e8c84a', '#0b0a09', '#c0c0c0'],
       desc: '<strong>Luxury Royal Theme:</strong> Shimmering Chrome Gold combined with Matte Black and highlights of Chrome Silver. Perfect for premium evening parties and milestone events.'
     },
     romantic: {
@@ -489,7 +489,7 @@
       desc: '<strong>Sweet Romance Theme:</strong> Soft Pastel Pink and Matte White with Rose Gold highlights. Ideal for anniversaries, baby showers, and kids\' first birthdays.'
     },
     festive: {
-      colors: ['#8b4fd8', '#e8c84a', '#e86fa3'],
+      colors: ['#b8986c', '#e8c84a', '#d8b788'],
       desc: '<strong>Vibrant Celebration Theme:</strong> Chrome Purple, Glossy Gold, and Pastel Pink clusters. Highly dynamic, great for Mehndi events, sangeet setups, and colorful home parties.'
     },
     corporate: {
@@ -779,11 +779,7 @@
     
     // Keyword matchers
     if (lower.includes('price') || lower.includes('cost') || lower.includes('package')) {
-      appendMsg(`Pricing starts from:<br/>
-      • <strong>Starter Basic:</strong> Room highlights.<br/>
-      • <strong>Popular Setup:</strong> Arches, backdrops.<br/>
-      • <strong>Grand stage:</strong> Full wedding/floral.<br/>
-      Contact us for a final quote. Let's design! <strong>What color palette prefix matches your theme?</strong>`, 'bot');
+      appendMsg(`All our decoration packages are customized to match your space and theme. Pricing is variable, so please <strong>Contact for info / Get a quote</strong>.<br/><br/>Let's design! <strong>What color theme matches your vision?</strong>`, 'bot');
       showColorsChips();
       return;
     }
@@ -913,7 +909,7 @@
       const bookBtn = document.getElementById('aiWidgetBookBtn');
       if (bookBtn) {
         bookBtn.addEventListener('click', () => {
-          let text = `Hello FreeStyle Balloon Decoration!%0A%0A`;
+          let text = `Hello FreeStyle Decorators!%0A%0A`;
           text += `I planned my event using the FreeStyle AI widget and would like to request this layout:%0A%0A`;
           text += `*Occasion:* ${encodeURIComponent(widgetState.event)}%0A`;
           text += `*Color Theme:* ${encodeURIComponent(widgetState.color)}%0A`;
