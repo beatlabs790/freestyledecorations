@@ -1,21 +1,16 @@
 {
-  "name": "freestyle-balloon-decoration",
+  "name": "freestyle-decorators",
   "version": "1.0.0",
-  "description": "Premium website for FreeStyle Balloon Decoration, Patna",
+  "description": "Premium website for FreeStyle Decorators, Patna",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js"
   },
   "dependencies": {
-    "express": "^4.22.2"
+    "express": "^4.18.2"
   },
-  "keywords": [
-    "balloon decoration",
-    "patna",
-    "bihar",
-    "event decoration"
-  ],
+  "keywords": ["balloon decoration", "patna", "bihar", "event decoration"],
   "author": "ZephyrDevs",
   "license": "ISC"
 }

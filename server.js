@@ -25,15 +25,15 @@ app.use((req, res, next) => {
 
 // ── Page routes (SSR – serve HTML with injected meta) ──
 const pages = {
-  '/':          { file: 'index.html',    title: 'FreeStyle Balloon Decoration | Best Decorators in Patna, Bihar' },
-  '/gallery':   { file: 'gallery.html',  title: 'Gallery | FreeStyle Balloon Decoration – Patna' },
-  '/services':  { file: 'services.html', title: 'Services & Pricing | FreeStyle Balloon Decoration' },
-  '/about':     { file: 'about.html',    title: 'About Us | FreeStyle Balloon Decoration – Patna' },
-  '/contact':   { file: 'contact.html',  title: 'Contact & Book | FreeStyle Balloon Decoration' },
-  '/reviews':   { file: 'reviews.html',  title: 'Customer Reviews | FreeStyle Balloon Decoration' },
+  '/':          { file: 'index.html',    title: 'FreeStyle Decorators | Best Decorators in Patna, Bihar' },
+  '/gallery':   { file: 'gallery.html',  title: 'Gallery | FreeStyle Decorators – Patna' },
+  '/services':  { file: 'services.html', title: 'Services & Pricing | FreeStyle Decorators' },
+  '/about':     { file: 'about.html',    title: 'About Us | FreeStyle Decorators – Patna' },
+  '/contact':   { file: 'contact.html',  title: 'Contact & Book | FreeStyle Decorators' },
+  '/reviews':   { file: 'reviews.html',  title: 'Customer Reviews | FreeStyle Decorators' },
   '/devs':      { file: 'devs.html',     title: 'Developers | ZephyrDevs' },
-  '/terms':     { file: 'terms.html',    title: 'Terms of Service | FreeStyle Balloon Decoration' },
-  '/privacy':   { file: 'privacy.html',  title: 'Privacy Policy | FreeStyle Balloon Decoration' },
+  '/terms':     { file: 'terms.html',    title: 'Terms of Service | FreeStyle Decorators' },
+  '/privacy':   { file: 'privacy.html',  title: 'Privacy Policy | FreeStyle Decorators' },
 };
 
 Object.entries(pages).forEach(([route, { file, title }]) => {
@@ -63,7 +63,7 @@ app.use((req, res) => {
 
 // ── Start server ───────────────────────────────────────
 app.listen(PORT, () => {
-  console.log(`\n🎈 FreeStyle Balloon Decoration`);
+  console.log(`\n🎈 FreeStyle Decorators`);
   console.log(`   Server running at → http://localhost:${PORT}`);
   console.log(`   Press Ctrl+C to stop\n`);
 });
