@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | FreeStyle Balloon Decoration – Patna</title>
+  <meta name="description" content="Browse our portfolio of stunning balloon and event decorations — birthdays, weddings, mehndi, farewell and corporate events in Patna, Bihar."/>
+  <meta name="keywords" content="balloon decoration gallery Patna, birthday decoration photos, wedding decoration Bihar gallery, balloon art Patna photos"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div id="preloader">
+  <div class="preloader-balloons">
+    <div class="preloader-balloon"></div>
+    <div class="preloader-balloon"></div>
+    <div class="preloader-balloon"></div>
+  </div>
+  <div class="preloader-text">Gallery</div>
+</div>
+
+<div class="ambient" aria-hidden="true">
+  <div class="ambient-orb orb1"></div>
+  <div class="ambient-orb orb2"></div>
+  <div class="ambient-orb orb3"></div>
+</div>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="logo">
+    <svg class="logo-icon" viewBox="0 0 64 64" aria-hidden="true">
+      <ellipse cx="20" cy="22" rx="11" ry="14" fill="#8b4fd8"/>
+      <ellipse cx="38" cy="18" rx="10" ry="13" fill="#e8c84a"/>
+      <ellipse cx="54" cy="24" rx="9" ry="12" fill="#e86fa3"/>
+      <line x1="20" y1="36" x2="20" y2="53" stroke="#8b4fd8" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="38" y1="31" x2="38" y2="53" stroke="#c8a820" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="54" y1="36" x2="54" y2="53" stroke="#c0437a" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+    Free<em>Style</em> Decor
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="devs.html">Devs</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">☀️</button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="gallery.html" class="active">Gallery</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="contact.html">Contact</a>
+  <a href="devs.html">Devs</a>
+</nav>
+
+<div class="pw">
+
+  <!-- Page hero with subtle bg -->
+  <div class="ph">
+    <div class="ph-bg"></div>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span style="opacity:.4">›</span><span>Gallery</span>
+    </nav>
+    <h1>Our Portfolio</h1>
+    <p>Every photograph captures a story — browse through our balloon and event decoration work across Patna, Bihar.</p>
+  </div>
+
+  <section class="section" style="padding-top:1.5rem">
+    <div class="container">
+
+      <!-- Filter + Mode -->
+      <div class="filter-tabs" role="group" aria-label="Filter by category">
+        <button class="filter-btn active" data-filter="all" id="filterAll">All Photos</button>
+        <button class="filter-btn" data-filter="birthday" id="filterBirthday">Birthday</button>
+        <button class="filter-btn" data-filter="wedding" id="filterWedding">Wedding</button>
+        <button class="filter-btn" data-filter="mehendi" id="filterMehendi">Mehndi</button>
+        <button class="filter-btn" data-filter="farewell" id="filterFarewell">Farewell</button>
+        <button class="filter-btn" data-filter="stage" id="filterStage">Stage</button>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;margin-bottom:1.5rem;">
+        <span style="font-size:.8rem;color:var(--text-3);letter-spacing:.06em;"><span id="photoCount">17</span> photos</span>
+        <div style="display:flex;gap:.5rem;">
+          <button class="mode-btn active" id="modeGrid" title="Grid" aria-label="Grid view">⊞</button>
+          <button class="mode-btn" id="modeMasonry" title="Masonry" aria-label="Masonry view">⊟</button>
+        </div>
+      </div>
+
+      <!-- Gallery Grid – all 17 photos -->
+      <div class="gallery-grid" id="galleryContainer">
+
+        <div class="gallery-item reveal" data-category="birthday" data-caption="Chrome Balloon Arch – Happy Birthday Neon Backdrop">
+          <img src="unnamed.jpg" alt="Chrome purple gold balloon arch Happy Birthday neon Patna" loading="eager"/>
+          <div class="gal-overlay"><span class="gal-label">Birthday</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal d1" data-category="farewell" data-caption="Gold & Black Balloon Arch – Fresher's & Farewell Party">
+          <img src="unnamed (1).jpg" alt="Gold black balloon arch college farewell Patna Bihar" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Farewell</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal d2" data-category="stage" data-caption="Elegant Stage Decoration">
+          <img src="unnamed (2).jpg" alt="Elegant stage decoration event Patna Bihar FreeStyle" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Stage</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="mehendi" data-caption="Traditional Mehndi Night – Yellow & Green Drapes">
+          <img src="unnamed (3).jpg" alt="Traditional mehndi night yellow green drape flower decoration Patna" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Mehndi</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal d1" data-category="birthday" data-caption="Purple & Silver Balloon Columns">
+          <img src="unnamed (4).jpg" alt="Purple silver balloon column birthday party Patna" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Birthday</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal d2" data-category="wedding" data-caption="Premium Pink Wedding Stage – Royal Floral Backdrop">
+          <img src="unnamed (5).jpg" alt="Premium pink wedding stage royal floral backdrop Patna" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Wedding</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="birthday" data-caption="Colourful Balloon Setup – Kids Birthday Party">
+          <img src="unnamed (6).jpg" alt="Colourful balloon kids birthday party decoration Patna" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Birthday</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal d1" data-category="stage" data-caption="Grand Stage with Full Backdrop">
+          <img src="unnamed (7).jpg" alt="Grand stage backdrop event decoration Patna Bihar balloon" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Stage</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal d2" data-category="stage" data-caption="Luxury Stage with Floral Arrangements">
+          <img src="unnamed (8).jpg" alt="Luxury stage floral arrangement balloon decoration Patna" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Stage</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="birthday" data-caption="Neon & Balloon Birthday Theme">
+          <img src="unnamed (9).jpg" alt="Neon balloon themed birthday decoration Patna Bihar" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Birthday</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal d1" data-category="wedding" data-caption="Wedding Entrance Balloon Arch">
+          <img src="unnamed (10).jpg" alt="Wedding entrance balloon arch decoration Patna" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Wedding</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal d2" data-category="stage" data-caption="Corporate Event Stage Décor">
+          <img src="unnamed (11).jpg" alt="Corporate event stage premium decoration Patna Bihar" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Stage</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="birthday" data-caption="Pastel Balloon Bouquet & Table Setup">
+          <img src="unnamed (12).jpg" alt="Pastel balloon bouquet table birthday decoration Patna" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Birthday</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal d1" data-category="farewell" data-caption="College Farewell Balloon Setup">
+          <img src="unnamed (13).jpg" alt="College farewell balloon decoration Patna Bihar FreeStyle" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Farewell</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal d2" data-category="wedding" data-caption="Royal Wedding Mandap & Floral Setup">
+          <img src="unnamed (14).jpg" alt="Royal wedding mandap floral decoration Patna Bihar" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Wedding</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="birthday" data-caption="Chrome Balloon Garland – Luxury Birthday Arch">
+          <img src="unnamed (15).jpg" alt="Chrome balloon garland luxury birthday arch Patna" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Birthday</span><div class="gal-icon">↗</div></div>
+        </div>
+
+        <div class="gallery-item reveal d1" data-category="stage" data-caption="Grand Full-Room Stage Transformation">
+          <img src="unnamed (16).jpg" alt="Grand stage full room transformation event decoration Patna" loading="lazy"/>
+          <div class="gal-overlay"><span class="gal-label">Stage</span><div class="gal-icon">↗</div></div>
+        </div>
+
+      </div><!-- /galleryContainer -->
+
+      <div id="noResults" style="display:none;text-align:center;padding:4rem 0;color:var(--text-3);">
+        <div style="font-size:3rem;margin-bottom:1rem;">🎈</div>
+        <p>No photos in this category yet — check back soon!</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top:0;padding-bottom:5rem">
+    <div class="container">
+      <div class="gc reveal" style="padding:2.75rem;text-align:center;">
+        <h2 style="font-family:'Playfair Display',serif;margin-bottom:.75rem;">Love What You See?</h2>
+        <p style="color:var(--text-2);margin-bottom:1.75rem;">Let's create something equally breathtaking for your next event.</p>
+        <a href="contact.html" class="btn btn-primary" id="galleryCta">Book Your Decoration →</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-grid">
+    <div class="f-brand">
+      <div class="f-logo">Free<em>Style</em> Decor</div>
+      <p>Patna's most creative balloon and event decoration studio. Transforming celebrations since 2019.</p>
+    </div>
+    <div>
+      <div class="f-head">Quick Links</div>
+      <ul class="f-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="f-head">Legal</div>
+      <ul class="f-links">
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="devs.html">Developers</a></li>
+      </ul>
+      <div class="f-head" style="margin-top:1.5rem;">Contact</div>
+      <ul class="f-links">
+        <li><a href="tel:9471679158">📞 9471679158</a></li>
+        <li><a href="https://wa.me/919471679158" target="_blank" rel="noopener">💬 WhatsApp</a></li>
+        <li style="font-size:.8rem;color:var(--text-3);">📍 Kadamkuan, Patna 800003</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 FreeStyle Balloon Decoration · All rights reserved.</p>
+    <p>Crafted by <a href="devs.html">ZephyrDevs</a></p>
+  </div>
+</footer>
+
+<a href="https://wa.me/919471679158" class="wa-fab" id="waFab" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">💬</a>
+
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+  <p class="cookie-text">We use cookies to improve your experience. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms</a>.</p>
+  <div class="cookie-actions">
+    <button class="btn btn-primary" id="cookieAccept" style="padding:.52rem 1.15rem;font-size:.82rem;">Accept</button>
+    <button class="btn btn-ghost" id="cookieDecline" style="padding:.52rem .95rem;font-size:.82rem;">Decline</button>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lb-inner">
+    <button class="lb-close" id="lightboxClose" aria-label="Close">✕</button>
+    <button class="lb-nav lb-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <img class="lb-img" id="lightboxImg" src="" alt=""/>
+    <button class="lb-nav lb-next" id="lightboxNext" aria-label="Next">›</button>
+    <p class="lb-caption" id="lightboxCaption"></p>
+    <p class="lb-counter" id="lightboxCounter"></p>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/gallery.js"></script>
+<script>
+  const cont = document.getElementById('galleryContainer');
+  document.getElementById('modeGrid')?.addEventListener('click', function() {
+    cont.className = 'gallery-grid';
+    this.classList.add('active');
+    document.getElementById('modeMasonry').classList.remove('active');
+  });
+  document.getElementById('modeMasonry')?.addEventListener('click', function() {
+    cont.className = 'gallery-masonry';
+    this.classList.add('active');
+    document.getElementById('modeGrid').classList.remove('active');
+  });
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setTimeout(() => {
+        const v = document.querySelectorAll('.gallery-item:not([style*="display: none"])').length;
+        document.getElementById('photoCount').textContent = v;
+        document.getElementById('noResults').style.display = v === 0 ? 'block' : 'none';
+      }, 50);
+    });
+  });
+</script>
+</body>
+</html>
