@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // ── Serve static assets (images, CSS, JS) ──────────────
-app.use(express.static(path.join(process.cwd(), 'public'), {
+app.use(express.static(process.cwd(), {
   maxAge: '1d',
   setHeaders: (res, filePath) => {
     if (filePath.endsWith('.html')) {
