@@ -37,7 +37,8 @@ const pages = {
 };
 
 Object.entries(pages).forEach(([route, { file, title }]) => {
-  app.get(route, (req, res) => {
+  const routesToMatch = route === '/' ? route : [route, `${route}.html`];
+  app.get(routesToMatch, (req, res) => {
     const filePath = path.join(process.cwd(), file);
     if (!fs.existsSync(filePath)) return res.status(404).sendFile(path.join(process.cwd(), '404.html'));
 
